@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(13, 6, 33);
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #c006b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+    
+    <h2>Topics Covered</h2>
+    <ol type="I">
+        <li>HTML5 Images</li>
+        <li>Lists</li>
+        <li>Tables</li>
+        <li>Forms and Input Types</li>
+        <li>Multimedia Elements</li>
+    </ol>
+    
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Beautiful Landscape" width="600">
+    
+    <h2>Contacts</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Mary Njahi</td>
+            <td>40200-Kawangware, Nairobi</td>
+            <td>+2547-234-567-89</td>
+            <td>njahimary01@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Lillian Okoth</td>
+            <td>3026-Bukna, Kisumu</td>
+            <td>+2547-345-678-09</td>
+            <td>lillyok@gmail.com</td>
+        </tr>
+        <tr>
+            <td>John Okeri</td>
+            <td>336-Ogembo, Kisii</td>
+            <td>+2547-098-765-43</td>
+            <td>jookeri4@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Emily Nyaosi</td>
+            <td>101-Likoni, Mombasa</td>
+            <td>+2547-112-345-56</td>
+            <td>emilynyaosi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Michael Odinga</td>
+            <td>204-Shanga, Kakamega</td>
+            <td>+2547-001-234-67</td>
+            <td>michaodinga@gmail.com</td>
+        </tr>
+    </table>
+    
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a county</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Kisii">Kisii</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kakamega">Kakamega</option>
+
+        </select><br><br>
+        
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label>
+        <br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
